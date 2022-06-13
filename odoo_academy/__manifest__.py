@@ -3,7 +3,7 @@
 {
     'name': 'Odoo Academy',
     
-    'summary': """Academyapp to manage Training""",
+    'summary': """Academy app to manage Training""",
     
     'description': """
         Academy Module to manage Training:
