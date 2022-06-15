@@ -11,14 +11,14 @@ class Book(models.Model):
     name = fields.Char(string="Title", required=True)
     description = fields.Text(string="Description")
 
-    level = fields.Selection(
-        string="Level",
+    category = fields.Selection(
+        string="Category",
         selection=[
-            ("beginner", "Beginner"),
-            ("intermediate", "Intermediate"),
-            ("advanced", "Advanced"),
+            ("history", "History"),
+            ("maths", "Maths"),
+            ("language", "Language"),
         ],
         copy=False,
     )
 
-    active = fields.Boolean(string="Active", default=True)
+    available = fields.Boolean(string="Available", default=True)
