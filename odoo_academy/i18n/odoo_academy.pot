@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-17 16:34+0000\n"
-"PO-Revision-Date: 2022-06-17 16:34+0000\n"
+"POT-Creation-Date: 2022-06-17 16:44+0000\n"
+"PO-Revision-Date: 2022-06-17 16:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,6 +26,16 @@ msgid "<strong>Session Duration:</strong>"
 msgstr ""
 
 #. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "<strong>Sessions</strong>"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Academy"
+msgstr ""
+
+#. module: odoo_academy
 #: model:res.groups,name:odoo_academy.group_academy_admin
 msgid "Academy / Admin"
 msgstr ""
@@ -41,6 +51,12 @@ msgid "Additional Fee"
 msgstr ""
 
 #. module: odoo_academy
+#: code:addons/odoo_academy/models/course.py:0
+#, python-format
+msgid "Additional fees cannot be less than 10.00: %s"
+msgstr ""
+
+#. module: odoo_academy
 #: model:ir.model.fields.selection,name:odoo_academy.selection__academy_course__level__advanced
 msgid "Advanced"
 msgstr ""
@@ -48,6 +64,12 @@ msgstr ""
 #. module: odoo_academy
 #: model:ir.model.fields,field_description:odoo_academy.field_academy_course__base_price
 msgid "Base Price"
+msgstr ""
+
+#. module: odoo_academy
+#: code:addons/odoo_academy/models/course.py:0
+#, python-format
+msgid "Base price cannot be set as negative"
 msgstr ""
 
 #. module: odoo_academy
@@ -92,8 +114,14 @@ msgid "Course List"
 msgstr ""
 
 #. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Course:"
+msgstr ""
+
+#. module: odoo_academy
 #: model:ir.actions.act_window,name:odoo_academy.course_list_action
 #: model:ir.ui.menu,name:odoo_academy.menu_academy_course
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
 msgid "Courses"
 msgstr ""
 
@@ -140,6 +168,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:odoo_academy.field_academy_course__description
 #: model_terms:ir.ui.view,arch_db:odoo_academy.course_view_form
 msgid "Description"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Description:"
 msgstr ""
 
 #. module: odoo_academy
@@ -213,13 +246,29 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Last modified:"
+msgstr ""
+
+#. module: odoo_academy
 #: model:ir.model.fields,field_description:odoo_academy.field_academy_course__level
 msgid "Level"
 msgstr ""
 
 #. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "Level:"
+msgstr ""
+
+#. module: odoo_academy
 #: model_terms:ir.ui.view,arch_db:odoo_academy.report_session_document
 msgid "Name"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.course_website
+msgid "No Session Currently"
 msgstr ""
 
 #. module: odoo_academy
@@ -250,6 +299,7 @@ msgstr ""
 
 #. module: odoo_academy
 #: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__session_id
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
 msgid "Session"
 msgstr ""
 
@@ -323,6 +373,11 @@ msgstr ""
 #. module: odoo_academy
 #: model:ir.model.fields,field_description:odoo_academy.field_academy_sale_wizard__session_student_ids
 msgid "Students in Current Session"
+msgstr ""
+
+#. module: odoo_academy
+#: model_terms:ir.ui.view,arch_db:odoo_academy.session_website
+msgid "Students:"
 msgstr ""
 
 #. module: odoo_academy
